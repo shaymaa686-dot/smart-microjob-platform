@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Micro-Job Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      MicroJob
+      <button id="darkBtn" class="btn small-btn">Dark</button>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Smart Micro-Job Platform</h1>
+    <p>Find short-term opportunities quickly with smart filtering and easy contact.</p>
+    <a class="btn" href="#jobs">Browse Jobs</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card">
+       <h3><i class="fa-solid fa-filter me-2"></i>Filtering</h3>
+        <p>Filter jobs by category and status.</p>
+      </div>
+      <div class="card">
+        <h3>Job Table</h3>
+        <p>Jobs are rendered dynamically using JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Validation</h3>
+        <p>Contact form with input validation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOBS -->
+  <section id="jobs" class="section">
+    <h2>Jobs</h2>
+
+    <input id="searchInput" class="input" placeholder="Search jobs...">
+    <div class="table-responsive mt-4">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Job Title</th>
+        <th>Category</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Electrician Assistant</td>
+        <td>Construction</td>
+        <td class="text-success">Open</td>
+      </tr>
+      <tr>
+        <td>Data Entry Clerk</td>
+        <td>IT</td>
+        <td class="text-secondary">Closed</td>
+      </tr>
+      <tr>
+        <td>Teaching Assistant</td>
+        <td>Education</td>
+        <td class="text-success">Open</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <div id="jobsContainer" class="jobs-box"></div>
+
+    <div id="detailsBox" class="details-box">
+      Click "Details" on any job to see more information.
+    </div>
+  </section>
+<section class="section text-center">
+  <h2>Platform Demo</h2>
+
+  <video width="60%" controls>
+    <source src="assets/video/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</section>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <form id="contactForm" class="form">
+      <input id="name" class="input" type="text" placeholder="Name">
+      <input id="email" class="input" type="email" placeholder="Email">
+      <textarea id="message" class="input" rows="4" placeholder="Message"></textarea>
+      <button class="btn" type="submit">Submit</button>
+      <p id="successMsg" class="success">Sent successfully ✅</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    © 2026 Smart Micro-Job Platform
+  </footer>
+
+<script src="main.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
